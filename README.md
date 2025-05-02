@@ -1,4 +1,4 @@
-<a href="https://garaven.vercel.app"><img src="./public/images/readme.png" alt="Portfolio displayed on different devices" width="100%"></a>
+<a href="https://basic-ptfolio-template.vercel.app/"><img src="./public/images/readme.png" alt="Portfolio template displayed on laptop" width="100%"></a>
 <hr>
 <div align="center">
   <img src="https://img.shields.io/badge/Astro-0C1222?style=for-the-badge&logo=astro&logoColor=FDFDFE">
@@ -19,7 +19,7 @@ src/
 ## **Local configuration** 
 1. Clone the repo:  
 ```
-git clone https://github.com/garaven/portfolio
+git clone https://github.com/garaven/basic-portfolio-template
 ```
 2. Install dependencies:
 ```  
