@@ -1,25 +1,39 @@
 ---
 import ProjectCard from '@components/ProjectCard.astro'
-import Typescript from '@assets/icons/typescript.astro';
+import Node from '@assets/icons/node.astro';
+import Express from '@assets/icons/express.astro';
+import Javascript from '@assets/icons/javascript.astro';
 import React from '@assets/icons/react.astro';
-import Supabase from '@assets/icons/supabase.astro';
-import Tailwind from '@assets/icons/tailwind.astro';
+import Mongodb from '@assets/icons/mongodb.astro';
+import Redis from '@assets/icons/redis.astro';
 ---
 
 <section class="my-20">
-  <h2 class="text-2xl font-semibold mb-2">Proyectos</h2>
+  <h2 class="text-2xl font-semibold mb-2">Projects</h2>
   <hr class="mb-6 border-zinc-600">
 
-  <ProjectCard projectTitle="Neovim" projectDescription="Vim-fork focused on extensibility and usability" projectLink="https://neovim.io" image="/images/neovim.webp">
-    <React />
-    <Supabase />
-    <Tailwind />
-    <Typescript />
+  <ProjectCard 
+    projectTitle="Production-Grade Blog API" 
+    projectDescription="A RESTful API with JWT authentication, Redis-powered rate limiting, and MongoDB full-text search. Features comprehensive Swagger documentation and Docker deployment."
+    projectLink="https://github.com/benotsman-youssuf/Blog-API">
+    <Node />
+    <Express />
+    <Javascript />
+    <Mongodb />
+    <Redis />
   </ProjectCard>
 
-  <ProjectCard projectTitle="React" projectDescription="The library for web and native user interfaces." projectLink="https://react.dev/" image="/images/react.webp">
-    <React />
-    <Supabase />
-    <Tailwind />
+  <ProjectCard 
+    projectTitle="Scalable Chunked File Uploader" 
+    projectDescription="Developed a resumable upload system supporting files up to +50GB through 1MB chunk processing with Node.js streams and automatic cleanup."
+    projectLink="https://github.com/benotsman-youssuf/chunked-uploader">
+    <!-- No icons -->
+  </ProjectCard>
+
+  <ProjectCard 
+    projectTitle="AI-Powered Learning Platform" 
+    projectDescription="A Django-based platform integrating Gemini AI for personalized learning, featuring multilingual support and optimized ORM models."
+    projectLink="https://github.com/benotsman-youssuf/pfe">
+    <!-- No icons -->
   </ProjectCard>
 </section>

@@ -2,8 +2,8 @@
 const name = Astro.props.name;
 ---
 <div class="flex flex-col items-center justify-center">
-  <div class="inline-flex flex-col items-center justify-center p-3 border rounded-md bg-zinc-800 border-zinc-600">
+  <div class="inline-flex flex-col items-center justify-center p-3 border rounded-md bg-zinc-800/50 border-zinc-700 hover:border-zinc-600 hover:bg-zinc-800 transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg hover:shadow-zinc-900/20">
     <slot />
   </div>
-  <span class="text-zinc-400 text-sm mt-1 font-sans">{name}</span>
+  <span class="text-zinc-400 text-sm mt-2 font-sans group-hover:text-zinc-300 transition-colors">{name}</span>
 </div>
