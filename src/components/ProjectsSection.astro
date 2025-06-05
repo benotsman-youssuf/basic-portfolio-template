@@ -5,7 +5,10 @@ import Express from '@assets/icons/express.astro';
 import Javascript from '@assets/icons/javascript.astro';
 import React from '@assets/icons/react.astro';
 import Mongodb from '@assets/icons/mongodb.astro';
+import Postgresql from '@assets/icons/postgresql.astro';
 import Redis from '@assets/icons/redis.astro';
+import Docker from '@assets/icons/Docker.astro';
+import Django from '@assets/icons/django.astro';
 ---
 
 <section class="my-20">
@@ -17,23 +20,28 @@ import Redis from '@assets/icons/redis.astro';
     projectDescription="A RESTful API with JWT authentication, Redis-powered rate limiting, and MongoDB full-text search. Features comprehensive Swagger documentation and Docker deployment."
     projectLink="https://github.com/benotsman-youssuf/Blog-API">
     <Node />
+    <Redis />
     <Express />
     <Javascript />
     <Mongodb />
-    <Redis />
   </ProjectCard>
 
   <ProjectCard 
     projectTitle="Scalable Chunked File Uploader" 
     projectDescription="Developed a resumable upload system supporting files up to +50GB through 1MB chunk processing with Node.js streams and automatic cleanup."
     projectLink="https://github.com/benotsman-youssuf/chunked-uploader">
-    <!-- No icons -->
+    <Node />
+    <Express />
+    <Javascript />
+    <Docker />
   </ProjectCard>
 
   <ProjectCard 
     projectTitle="AI-Powered Learning Platform" 
     projectDescription="A Django-based platform integrating Gemini AI for personalized learning, featuring multilingual support and optimized ORM models."
     projectLink="https://github.com/benotsman-youssuf/pfe">
-    <!-- No icons -->
+    <Django />
+    <React />
+    <Postgresql />
   </ProjectCard>
 </section>
